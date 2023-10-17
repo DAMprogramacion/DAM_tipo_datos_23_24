@@ -19,6 +19,27 @@ public class EcuacionSegundoGradoV1 {
 		
 		//Resolvemos por lo menos tres ecuaciones
 		
+		//Primera ecuación 3 · x² -15 · x + 5 = 0
+		int a = 3, b = -15, c = 5;
+		float x1 = (float) (-b + Math.sqrt(b * b - 4 * a *c) / (2 * a));
+		float x2 = (float) (-b - Math.sqrt(b * b - 4 * a *c) / (2 * a));
+		System.out.println("Ecuación: 3 · x² -15 · x + 5 = 0");
+		System.out.println("X1: " + x1 + ", X2: " + x2 + '\n');
+		
+		//Segunda ecuación -5 · x² +x - 3 = 0
+		a = -5; b = 1; c = -3;
+		x1 = (float) (-b + Math.sqrt(b * b - 4 * a *c) / (2 * a));
+		x2 = (float) (-b - Math.sqrt(b * b - 4 * a *c) / (2 * a));
+		System.out.println("Ecuación: -5 · x² +x -3 = 0");
+		System.out.println("X1: " + x1 + ", X2: " + x2 + '\n');
+		
+		//Terecera ecuación -5 · x² +x + 3 = 0
+		a = -5; b = 1; c = +3;
+		x1 = (float) (-b + Math.sqrt(b * b - 4 * a *c) / (2 * a));
+		x2 = (float) (-b - Math.sqrt(b * b - 4 * a *c) / (2 * a));
+		System.out.println("Ecuación: -5 · x² +x + 3 = 0");
+		System.out.println("X1: " + x1 + ", X2: " + x2 + '\n');
+		
 	}
 }
 

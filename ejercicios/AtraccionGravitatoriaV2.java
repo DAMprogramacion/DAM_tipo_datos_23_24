@@ -20,7 +20,7 @@ public class AtraccionGravitatoriaV2 {
 
     //cambio distanca a long, porque en el caso de planetas mas distantes el tipo int se nos queda corto
 	public static void calcularAtraccionGravitatoria(double masa1, double masa2, long distancia) {
-		final var GRAVITACION_UNIVERSAL = 6.67E-11;
+		final double GRAVITACION_UNIVERSAL = 6.67E-11;
 		double atraccionGravitatoria = 
 			GRAVITACION_UNIVERSAL * masa1 * masa2 / Math.pow (distancia, 2);
 		System.out.println("La atracción vale " + atraccionGravitatoria + 'N');
